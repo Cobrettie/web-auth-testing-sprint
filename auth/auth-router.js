@@ -51,7 +51,8 @@ router.post('/login', async (req, res) => {
     const token = generateToken(user)
     res.cookie('token', token)
     res.json({
-      message: `hey ${username}, you are logged in, I sent your token through cookies`
+      message: `hey ${username}, you are logged in, I sent your token through cookies`,
+      token: token
     })
   } catch (err) {
     console.log('Error: ', err)
