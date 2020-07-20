@@ -26,11 +26,19 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Differences between using _sessions_ or _JSON Web Tokens_ for authentication.
 
+  1A. Sessions are stored on the server. JWT's are not stored on the server. The server will create a session for the user, after user logs in. While user is signed in, a cookie with the session id is sent along with every request. For JWT's, the server creates a JWT using a 'secret', then sends the JWT to the client, where the client will store the JWT, usually in local storage. The JWT is included in the header with every request.
+
 2. What does `bcrypt` do to help us store passwords in a secure manner.
+
+  2A. bcryptjs helps us to store passwords safely, through various ways. bcrypt uses salted hashing - generating random bytes(the salt) and combining it with the password, then hashes the password. Two users enter same password? Password is not the same, thanks to the random salt
 
 3. How are unit tests different from integration and end-to-end testing.
 
+  3A. Unit tests are tests performed on individual components of code. ie single functions, etc. Integration and end-to-end testing are testing all aspects of a website. API calls and so forth.
+
 4. How _Test Driven Development_ changes the way we write applications and tests.
+
+  4A. From my understanding, TDD is basically scaffolding your requirements, build the tests even though the tests will fail, build the components needed to make the tests pass, then refactor.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -51,8 +59,8 @@ Your finished project must include all of the following requirements:
 
 - [x] An authentication workflow with functionality for account creation and login implemented inside `/auth/auth-router.js`. A `user` has `username` and `password`. Both properties are required.
 - [x] Middleware used to restrict access to resources for non authenticated requests. Use the file: `./auth/authenticate-middleware.js` as a starting point.
-- [ ] Configuration for running tests using `Jest`.
-- [ ] A **minimum o 2 tests** per API endpoint.
+- [x] Configuration for running tests using `Jest`.
+- [x] A **minimum o 2 tests** per API endpoint.
 
 **Note**: the database already has the users table, but if you run into issues, the migrations are available.
 
@@ -71,6 +79,6 @@ After finishing your required elements, you can push your work further. These go
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete after receiving your pull-request
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
+- [x] Add your team lead as a reviewer on the pull-request
+- [x] Your team lead will count the project as complete after receiving your pull-request
