@@ -29,7 +29,7 @@ test('GET /', async () => {
 describe('auth-router integration tests', () => {
   // it('POST /api/auth/register', async () => {
   //   let user = {
-  //     username: 'any',
+  //     username: 'any123',
   //     password: '1234'
   //   }
   //   const res = await supertest(server)

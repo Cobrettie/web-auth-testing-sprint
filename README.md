@@ -10,7 +10,7 @@ You are not allowed to collaborate during the sprint challenge. However, you are
 
 _You have **three hours** to complete this challenge. Plan your time accordingly._
 
-## Introduction
+## Introduction 
 
 In this challenge, you build a real wise-guy application. _Dad jokes_ are all the rage these days. Currently the application is trying to receive some `Dad Jokes`, however we are locked out.
 
